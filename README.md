@@ -1,119 +1,105 @@
-# [Soft UI Dashboard](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
+# [Material Tailwind Dashboard React](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
 
-![version](https://img.shields.io/badge/version-1.0.3-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/soft-ui-dashboard.svg)](https://github.com/creativetimofficial/soft-ui-dashboard/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/soft-ui-dashboard.svg)](https://github.com/creativetimofficial/soft-ui-dashboard/issues?q=is%3Aissue+is%3Aclosed)
+![version](https://img.shields.io/badge/version-1.1.0-blue.svg) [![GitHub issues open](https://img.shields.io/github/issues/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aopen+is%3Aissue) [![GitHub issues closed](https://img.shields.io/github/issues-closed-raw/creativetimofficial/material-tailwind-dashboard-react.svg?maxAge=2592000)](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues?q=is%3Aissue+is%3Aclosed)
 
-![Image](https://s3.amazonaws.com/creativetim_bucket/products/487/original/opt_sdp_thumbnail.jpg?1622812208)
+![Image](https://s3.amazonaws.com/creativetim_bucket/products/488/original/opt_md_tailwindreact_thumbnail.jpg)
 
-Most complex and innovative Dashboard Made by [Creative Tim](https://creative-tim.com/). Check our latest Free Bootstrap 5 Dashboard.
+Material Tailwind Dashboard React is a _free_ Admin Template based on two popular front-end technologies: _Tailwind CSS & React_. It was built to simplify the developer's work and is comes with a fresh design inspired by Google's Material Design. All its components are built to fit perfectly with each other, while aligning to the material concepts.
 
-Designed for those who like bold elements and beautiful websites. Made of hundred of elements, designed blocks and fully coded pages, Soft UI Dashboard is ready to help you create stunning websites and webapps.
+Save weeks of time and build your perfect dashboard with this powerful template! It features 120 fully coded components and 4 example pages if you want to get inspiration or just show something directly to your clients. This beautiful admin also comes with 5 color filter choices for both the sidebar and the card headers (blue, green, orange, red and purple) and an option to have a background image on the sidebar.
 
-We created many examples for pages like Sign In, Profile and so on. Just choose between a Basic Design, an illustration or a cover and you are good to go!
-
-**Fully Coded Elements**
-
-Soft UI Dashboard is built with over 70 frontend individual elements, like buttons, inputs, navbars, navtabs, cards or alerts, giving you the freedom of choosing and combining. All components can take variations in colour, that you can easily modify using SASS files and classes.
-
-You will save a lot of time going from prototyping to full-functional code, because all elements are implemented.
-This Free Bootstrap 5 Dashboard is coming with prebuilt design blocks, so the development process is seamless,
-switching from our pages to the real website is very easy to be done.
-
-View [all components here](https://www.creative-tim.com/learning-lab/bootstrap/alerts/soft-ui-dashboard?ref=readme-sud).
-
-**Documentation built by Developers**
-
-Each element is well presented in a very complex documentation.
-You can read more about the <a href="https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard" target="_blank">documentation here</a>.
-
-**Example Pages**
-
-If you want to get inspiration or just show something directly to your clients,
-you can jump start your development with our pre-built example pages. You will be able
-to quickly set up the basic structure for your web project.
-View <a href="https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html" target="_blank">example pages here</a>.
-
-**HELPFUL LINKS**
-
-- View <a href="https://github.com/creativetimofficial/soft-ui-dashboard" target="_blank">Github Repository</a>
-
-- Check <a href="https://www.creative-tim.com/faq" target="_blank">FAQ Page</a>
-
-#### Special thanks
-During the development of this dashboard, we have used many existing resources from awesome developers. We want to thank them for providing their tools open source:
-- [Bootstrap 5](https://www.getbootstrap.com)- Open source front end framework
-- [Popper.js](https://popper.js.org/) - Kickass library used to manage poppers
-
-Let us know your thoughts below. And good luck with development!
+Material Tailwind Dashboard React is built based on our very popular Material Kit (https://www.creative-tim.com/product/material-kit). It makes use of light, surface and movement. The general layout resembles sheets of paper following multiple layers, so that the depth and order is obvious. Inside the archive you will find multiple example pages on how to use all components. And, of course, every element is well-documented.
 
 ## Table of Contents
 
-* [Versions](#versions)
-* [Demo](#demo)
-* [Quick Start](#quick-start)
-* [Documentation](#documentation)
-* [File Structure](#file-structure)
-* [Browser Support](#browser-support)
-* [Resources](#resources)
-* [Reporting Issues](#reporting-issues)
-* [Technical Support or Questions](#technical-support-or-questions)
-* [Licensing](#licensing)
-* [Useful Links](#useful-links)
+-   [Versions](#versions)
+-   [Demo](#demo)
+-   [Quick Start](#quick-start)
+-   [Documentation](#documentation)
+-   [File Structure](#file-structure)
+-   [Browser Support](#browser-support)
+-   [Resources](#resources)
+-   [Reporting Issues](#reporting-issues)
+-   [Technical Support or Questions](#technical-support-or-questions)
+-   [Licensing](#licensing)
+-   [Useful Links](#useful-links)
 
 ## Versions
 
-[<img src="https://s3.amazonaws.com/creativetim_bucket/github/html.png" width="60" height="60" />](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud)
+[<img src="https://github.com/creativetimofficial/public-assets/blob/master/logos/react.jpg?raw=true" width="60" height="60" />](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr)
+| React |
+| ----- |
 
-| HTML |
-| --- |
-| [![Soft UI Dashboard HTML](https://s3.amazonaws.com/creativetim_bucket/products/450/original/opt_sd_free_thumbnail.png)](http://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
+| [![Material Tailwind Dashboard React](https://s3.amazonaws.com/creativetim_bucket/products/488/original/opt_md_tailwindreact_thumbnail.jpg)](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
 
 ## Demo
 
-- [Profile page](http://demos.creative-tim.com/soft-ui-dashboard/pages/profile.html?ref=readme-sud)
-- [Sign in page](http://demos.creative-tim.com/soft-ui-dashboard/pages/sign-in.html?ref=readme-sud)
-- [Sign up page](https://demos.creative-tim.com/soft-ui-dashboard/pages/sign-up.html?ref=readme-sud)
-
-[View More](https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud).
+-   [Dashboard](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
+-   [Settings](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/settings?ref=readme-mtdr)
+-   [Tables](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/tables?ref=readme-mtdr)
+-   [Maps](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/maps?ref=readme-mtdr)
 
 ## Quick start
 
 Quick start options:
 
-- Download from [Creative Tim](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud).
+-   Download from [Creative Tim](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr).
 
 ## Terminal Commands
 
 1. Download and Install NodeJs from [NodeJs Official Page](https://nodejs.org/en/download/).
-2. Navigate to the root / directory and run npm install to install our local dependencies.
+2. Navigate to the root / directory and run npm install or (yarn install, if you're using yarn) to install our local dependencies.
 
 ## Documentation
-The documentation for the Soft UI Dashboard is hosted at our [website](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard?ref=readme-sud).
+
+Material Tailwind Dashboard React build using Material Tailwind and the documentation of Material Tailwind is hosted at [Material Tailwinl](https://material-tailwind.com/documentation/quick-start?ref=readme-mtdr).
 
 ### What's included
 
 Within the download you'll find the following directories and files:
 
 ```
-soft-ui-dashboard
-    ├── assets
-    │   ├── css
-    │   ├── fonts
-    │   ├── img
-    │   ├── js
-    │   │   ├── core
-    │   │   ├── plugins
-    │   │   └── soft-ui-dashboard.js
-    │   │   └── soft-ui-dashboard.js.map
-    │   │   └── soft-ui-dashboard.min.js
-    │   └── scss
-    │       ├── soft-ui-dashboard
-    │       └── soft-ui-dashboard.scss
-    ├── docs
-    │   ├── documentation.html
-    ├── pages
-    ├── CHANGELOG.md
-    ├── gulpfile.js
-    ├── package.json
+Material Tailwind Dashboard React
+    ├── material-tailwind-dashboard-react
+    │   ├── public
+    │   │   ├── index.html
+    │   │   ├── favicon.ico
+    │   │   └── apple-icon.png
+    │   ├── src
+    │   │   ├── assets
+    │   │   │   ├── img/
+    │   │   │   └── styles/
+    │   │   ├── components
+    │   │   │   ├── AdminNavbar.js
+    │   │   │   ├── ChartBar.js
+    │   │   │   ├── ChartLine.js
+    │   │   │   ├── Footer.js
+    │   │   │   ├── MapExample.js
+    │   │   │   ├── PageVisitsCard.js
+    │   │   │   ├── ProfileCard.js
+    │   │   │   ├── SettingsForm.js
+    │   │   │   ├── Sidebar.js
+    │   │   │   ├── StatusCard.js
+    │   │   │   ├── TableCard.js
+    │   │   │   └── TrafficCard.js
+    │   │   ├── Pages
+    │   │   │   ├── Dashboard.js
+    │   │   │   ├── Maps.js
+    │   │   │   ├── Settings.js
+    │   │   │   └── Tables.js
+    │   │   ├── App.js
+    │   │   ├── App.test.js
+    │   │   ├── index.js
+    │   │   ├── reportWebVitals.js
+    │   │   └── setup.test.js
+    │   ├── CHANGELOG.md
+    │   ├── jsconfig.json
+    │   ├── LICENSE
+    │   ├── package.json
+    │   ├── postcss.config.js
+    │   ├── README.md
+    │   ├── tailwind.config.js
+    │   ├── yarn.lock
 ```
 
 ## Browser Support
@@ -123,38 +109,40 @@ At present, we officially aim to support the last two versions of the following 
 <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/chrome.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/firefox.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/edge.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/safari.png" width="64" height="64"> <img src="https://s3.amazonaws.com/creativetim_bucket/github/browser/opera.png" width="64" height="64">
 
 ## Resources
-- [Live Preview](https://demos.creative-tim.com/soft-ui-dashboard/pages/dashboard.html?ref=readme-sud)
-- [Download Page](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud)
-- Documentation is [here](https://www.creative-tim.com/learning-lab/bootstrap/overview/soft-ui-dashboard?ref=readme-sud)
-- [License Agreement](https://www.creative-tim.com/license?ref=readme-sud)
-- [Support](https://www.creative-tim.com/contact-us?ref=readme-sud)
-- Issues: [Github Issues Page](https://github.com/creativetimofficial/soft-ui-dashboard/issues)
+
+-   [Live Preview](https://demos.creative-tim.com/material-tailwind-dashboard-react/#/?ref=readme-mtdr)
+-   [Download Page](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr)
+-   Documentation is [here](https://material-tailwind.com/documentation/quick-start?ref=readme-mtdr)
+-   [License Agreement](https://www.creative-tim.com/license?ref=readme-mtdr)
+-   [Support](https://www.creative-tim.com/contact-us?ref=readme-mtdr)
+-   Issues: [Github Issues Page](https://github.com/creativetimofficial/material-tailwind-dashboard-react/issues)
 
 ## Reporting Issues
-We use GitHub Issues as the official bug tracker for the Soft UI Dashboard. Here are some advices for our users that want to report an issue:
 
-1. Make sure that you are using the latest version of the Soft UI Dashboard. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/soft-ui-dashboard?ref=readme-sud).
+We use GitHub Issues as the official bug tracker for the Material Tailwind Dashboard React. Here are some advices for our users that want to report an issue:
+
+1. Make sure that you are using the latest version of the Material Tailwind Dashboard React. Check the CHANGELOG from your dashboard on our [website](https://www.creative-tim.com/product/material-tailwind-dashboard-react?ref=readme-mtdr).
 2. Providing us reproducible steps for the issue will shorten the time it takes for it to be fixed.
 3. Some issues may be browser specific, so specifying in what browser you encountered the issue might help.
 
 ## Technical Support or Questions
 
-If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-sud) instead of opening an issue.
+If you have questions or need help integrating the product please [contact us](https://www.creative-tim.com/contact-us?ref=readme-mtdr) instead of opening an issue.
 
 ## Licensing
 
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-sud)
-- Creative Tim [license](https://www.creative-tim.com/license?ref=readme-sud)
+-   Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-mtdr)
+-   Creative Tim [license](https://www.creative-tim.com/license?ref=readme-mtdr)
 
 ## Useful Links
 
-- [More products](https://www.creative-tim.com/templates?ref=readme-sud) from Creative Tim
+-   [More products](https://www.creative-tim.com/templates?ref=readme-mtdr) from Creative Tim
 
-- [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
+-   [Tutorials](https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w)
 
-- [Freebies](https://www.creative-tim.com/bootstrap-themes/free?ref=readme-sud) from Creative Tim
+-   [Freebies](https://www.creative-tim.com/templates/free?ref=readme-mtdr) from Creative Tim
 
-- [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-sud) (earn money)
+-   [Affiliate Program](https://www.creative-tim.com/affiliates/new?ref=readme-mtdr) (earn money)
 
 ##### Social Media
 
@@ -163,5 +151,7 @@ Twitter: <https://twitter.com/CreativeTim>
 Facebook: <https://www.facebook.com/CreativeTim>
 
 Dribbble: <https://dribbble.com/creativetim>
+
+Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://instagram.com/creativetimofficial>
