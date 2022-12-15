@@ -4,7 +4,7 @@ import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
 
-export default function ChartBar() {
+const ChartBar = () => {
     useEffect(() => {
         let config = {
             type: 'bar',
@@ -116,4 +116,6 @@ export default function ChartBar() {
             </CardBody>
         </Card>
     );
-}
+};
+
+export default ChartBar;

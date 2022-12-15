@@ -5,7 +5,7 @@ import Button from '@material-tailwind/react/Button';
 import Input from '@material-tailwind/react/Input';
 import Textarea from '@material-tailwind/react/Textarea';
 
-export default function SettingsForm() {
+const SettingsForm = () => {
     return (
         <Card>
             <CardHeader color="purple" contentPosition="none">
@@ -101,4 +101,6 @@ export default function SettingsForm() {
             </CardBody>
         </Card>
     );
-}
+};
+
+export default SettingsForm;

@@ -1,6 +1,6 @@
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 
-export default function MapExample() {
+const MapExample = () => {
     const defaultCenter = {
         lat: 40.748817,
         lng: -73.985428,
@@ -19,4 +19,6 @@ export default function MapExample() {
             </LoadScript>
         </div>
     );
-}
+};
+
+export default MapExample;

@@ -7,7 +7,7 @@ import Dropdown from '@material-tailwind/react/Dropdown';
 import DropdownItem from '@material-tailwind/react/DropdownItem';
 import ProfilePicture from 'assets/img/team-1-800x800.jpg';
 
-export default function AdminNavbar({ showSidebar, setShowSidebar }) {
+const AdminNavbar = ({ showSidebar, setShowSidebar }) => {
     const location = useLocation().pathname;
 
     return (
@@ -84,4 +84,6 @@ export default function AdminNavbar({ showSidebar, setShowSidebar }) {
             </div>
         </nav>
     );
-}
+};
+
+export default AdminNavbar;

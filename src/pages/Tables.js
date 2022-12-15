@@ -1,7 +1,7 @@
 import StatusCard from 'components/StatusCard';
 import TableCard from 'components/TableCard';
 
-export default function Dashboard() {
+const Tables = () => {
     return (
         <>
             <div className="bg-light-blue-500 pt-14 pb-28 px-3 md:px-8 h-auto">
@@ -60,4 +60,6 @@ export default function Dashboard() {
             </div>
         </>
     );
-}
+};
+
+export default Tables;

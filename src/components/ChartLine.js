@@ -4,7 +4,7 @@ import Card from '@material-tailwind/react/Card';
 import CardHeader from '@material-tailwind/react/CardHeader';
 import CardBody from '@material-tailwind/react/CardBody';
 
-export default function ChartLine() {
+const ChartLine = () => {
     useEffect(() => {
         var config = {
             type: 'line',
@@ -125,4 +125,6 @@ export default function ChartLine() {
             </CardBody>
         </Card>
     );
-}
+};
+
+export default ChartLine;

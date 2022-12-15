@@ -5,7 +5,7 @@ import CardStatus from '@material-tailwind/react/CardStatus';
 import CardStatusFooter from '@material-tailwind/react/CardStatusFooter';
 import Icon from '@material-tailwind/react/Icon';
 
-export default function StatusCard({
+const StatusCard = ({
     color,
     icon,
     title,
@@ -14,7 +14,7 @@ export default function StatusCard({
     percentageColor,
     percentageIcon,
     date,
-}) {
+}) => {
     return (
         <div className="px-4 mb-10">
             <Card>
@@ -36,4 +36,6 @@ export default function StatusCard({
             </Card>
         </div>
     );
-}
+};
+
+export default StatusCard;

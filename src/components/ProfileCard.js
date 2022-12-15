@@ -8,7 +8,7 @@ import LeadText from '@material-tailwind/react/LeadText';
 import Button from '@material-tailwind/react/Button';
 import ProfilePicture from 'assets/img/team-1-800x800.jpg';
 
-export default function ProfileCard() {
+const ProfileCard = () => {
     return (
         <Card>
             <div className="flex flex-wrap justify-center">
@@ -77,4 +77,6 @@ export default function ProfileCard() {
             </CardFooter>
         </Card>
     );
-}
+};
+
+export default ProfileCard;

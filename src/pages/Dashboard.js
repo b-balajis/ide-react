@@ -4,7 +4,7 @@ import ChartBar from 'components/ChartBar';
 import PageVisitsCard from 'components/PageVisitsCard';
 import TrafficCard from 'components/TrafficCard';
 
-export default function Dashboard() {
+const Dashboard = () => {
     return (
         <>
             <div className="bg-light-blue-500 px-3 md:px-8 h-40" />
@@ -83,4 +83,6 @@ export default function Dashboard() {
             </div>
         </>
     );
-}
+};
+
+export default Dashboard;

@@ -4,7 +4,7 @@ import CardBody from '@material-tailwind/react/CardBody';
 import Button from '@material-tailwind/react/Button';
 import Progress from '@material-tailwind/react/Progress';
 
-export default function TrafficCard() {
+const TrafficCard = () => {
     return (
         <Card>
             <CardHeader color="purple" contentPosition="none">
@@ -85,4 +85,6 @@ export default function TrafficCard() {
             </CardBody>
         </Card>
     );
-}
+};
+
+export default TrafficCard;

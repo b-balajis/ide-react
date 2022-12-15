@@ -1,7 +1,7 @@
 import StatusCard from 'components/StatusCard';
 import MapExample from 'components/MapExample';
 
-export default function Dashboard() {
+const Maps = () => {
     return (
         <>
             <div className="bg-light-blue-500 pt-14 pb-28 px-3 md:px-8 h-auto">
@@ -60,4 +60,6 @@ export default function Dashboard() {
             </div>
         </>
     );
-}
+};
+
+export default Maps;
