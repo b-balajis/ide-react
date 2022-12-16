@@ -1,4 +1,5 @@
 import React from 'react';
+import "../index.css"
 
 const PageNotFound = () => {
     return (
@@ -6,9 +7,10 @@ const PageNotFound = () => {
         <div>
             PageNotFound
         </div>
-        <div>
-            <a className='text-center' href="/">Go to Home</a>
-        </div>
+        <div className="mt-16">
+            <div className="flex flex-wrap">404
+                </div>
+            </div>
         </>
     );
 };
