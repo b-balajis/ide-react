@@ -1,5 +1,5 @@
 import React from 'react';
-import "../index.css"
+import "../assets/styles/index.css"
 
 const PageNotFound = () => {
     return (
