@@ -1,0 +1,49 @@
+Users:
+    ADMIN
+    FACULTY
+    STUDENT
+
+<-------------Pages for users-------------->
+
+<-----------STUDENT--------->
+Student:
+    1. Dashboard - to display respective Student's marks for all opted Subjects
+    2. Subjects - with list of all opted Subjects in that semester
+    3. Subject - respective selected Subject page from Subjects (eg: Java, Python)
+    4. Question - compiler page which displays respective selected Question from Subject page (eg: 3. Write a program to sum n natural numbers)
+    5. Profile - Student profile should be displayed and can change their password using old password
+
+<-----------FACULTY---------->
+Faculty:
+    1. Dashboard - to display respective Sections marks for all students 
+    2. Subjects - with list of all aloted Subjects in that semester
+    3. Subject - display list of all Questions for selected subject from subjects page
+    4. Profile - can edit Details like contact num, password
+
+Junior Assistant:
+    1. Dashboard - discussion needed
+    2. Student Details - display all students Details by selecting year & Section
+    3. Faculty Details - display all Faculty details 
+    4. Account Creation - Student and Faculty 
+    5. Profile - can edit name, password
+
+<---------ADMIN--------------->
+Admin:
+    1. Dashboard - discussion needed
+    2. Student Details
+    3. Faculty Details
+    4. Account Creation - Student, Faculty and Admin
+    5. Profile - can edit password, name, contact num
+
+
+<--------------------------DATABASE------------------------------------------->
+ADMIN:
+        ID, Name, Mail, Phone Number, password, Dept 
+FACULTY: (with JR Assistant)
+        ID, Name, Mail, Phone Number, password, Dept
+STUDENT:
+        JNTU, Name, Mail, Phone Number, password, Dept, Admitted Year (batch)
+SUBJECTS:
+        ID, Name, Dept
+SUBJECT:
+        QNo(ID), Qname, Test cases,  
