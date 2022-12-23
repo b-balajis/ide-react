@@ -46,4 +46,4 @@ STUDENT:
 SUBJECTS:
         ID, Name, Dept
 SUBJECT:
-        QNo(ID), Qname, Test cases,  
+        QNo(ID), Qname, Test cases, Faculty Name
