@@ -16,6 +16,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "chart.js": "2.9.4",
+    "dayjs": "^1.11.7",
     "firebase-tools": "^11.18.0",
     "react": "^17.0.2",
     "react-animated-3d-card": "^1.0.2",
