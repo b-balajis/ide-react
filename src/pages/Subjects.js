@@ -1,11 +1,10 @@
 // import "./styles.css";
 import "@sl-codeblaster/react-3d-animated-card";
 // import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
-import Card from "react-animated-3d-card";
+// import Card from "react-animated-3d-card";
 import Python from "../public/images/python.jpg";
 import Java from "../public/images/Java.jpg";
 import CPP from "../public/images/cpp.jpg";
-import Subject from "./SignIn";
 
 const Subjects = () => {
   const SubjectDetails = [
