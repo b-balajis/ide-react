@@ -13,6 +13,10 @@ import PageNotFound from 'pages/PageNotFound';
 import Subjects from 'pages/Subjects';
 import SignIn from 'pages/SignIn';
 import Subject from 'pages/Subject';
+import AddStudent from 'pages/AddStudent';
+import AddFaculty from 'pages/AddFaculty';
+import AddSubject from 'pages/AddSubject';
+import Error from 'pages/Error';
 
 function App() {
     return (
@@ -27,7 +31,10 @@ function App() {
                     <Route path="/subjects" element={<Subjects />} />
                     <Route path="/subject" element={<Subject />} />
                     <Route path="/signin" element={<SignIn />} />
-                    <Route path="*" element={<PageNotFound/>} />
+                    <Route path="/addstudent" element={<AddStudent />} />
+                    <Route path="/addfaculty" element={<AddFaculty />} />
+                    <Route path="/addsubject" element={<AddSubject />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
                 <Footer />
             </div>

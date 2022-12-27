@@ -1,0 +1,47 @@
+[
+    {
+        "id":1,
+        "name": "Civil Engineering",
+        "branch": "CE"
+    },
+    {
+        "id":2,
+        "name": "Computer Science and Engineering",
+        "branch": "CSE"
+    },
+    {
+        "id":3,
+        "name": "Electrical and Electronics Engineering",
+        "branch": "EEE"
+    },
+    {
+        "id":4,
+        "name": "Electronics and Communication Engineering",
+        "branch": "ECE"
+    },
+    {
+        "id":5,
+        "name": "Mechanical Engineering",
+        "branch": "ME"
+    },
+    {
+        "id":6,
+        "name": "Information Technology",
+        "branch": "IT"
+    },
+    {
+        "id":7,
+        "name": "CSE (Artificial Intelligence & Data Science)",
+        "branch": "AIDS"
+    },
+    {
+        "id":8,
+        "name": "CSE (Artificial Intelligence & Machine Learning)",
+        "branch": "AIML"
+    },
+    {
+        "id":9,
+        "name": "Basic Science & Humanities",
+        "branch": "BSH"
+    }
+]

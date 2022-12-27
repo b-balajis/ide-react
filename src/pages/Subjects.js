@@ -5,6 +5,7 @@ import Card from "react-animated-3d-card";
 import Python from "../public/images/python.jpg";
 import Java from "../public/images/Java.jpg";
 import CPP from "../public/images/cpp.jpg";
+import Subject from "./SignIn";
 
 const Subjects = () => {
   const SubjectDetails = [
@@ -27,28 +28,15 @@ const Subjects = () => {
 
   return (
     <>
-      <div className="flex mt-20 left-10">
+      <div className="flex mt-20 left-10 ml-6">
         {SubjectDetails?.map((subject) => (
-          <div className="mr-4">
-            <Card
-              style={{
-                // backgroundColor: "#202037",
-                width: "300px",
-                height: "250px",
-                cursor: "pointer",
-                outline: "cover",
-              }}
-            >
-              <img
-                src={subject.image}
-                alt={subject.image}
-                style={{
-                  width: "300px",
-                  height: "250px",
-                }}
-              />
-            </Card>
-          </div>
+            <div className="flex flex-wrap text-center mr-4">
+              <div class="">
+                <div className="border rounded-lg transform transition duration-500 hover:scale-110">
+                  <img src={subject.image} alt={subject.name} className="h-40 w-64 rounded-xl"/>
+                </div>
+              </div>
+            </div>
         ))}
       </div>
     </>

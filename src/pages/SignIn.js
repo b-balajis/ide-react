@@ -1,172 +1,169 @@
 import * as React from "react";
 import Avatar from "@mui/material/Avatar";
-import Box from "@mui/joy/Box";
-import Card from "@mui/joy/Card";
-import Typography from "@mui/joy/Typography";
 import Button from "@mui/material/Button";
-import DeleteForeverRoundedIcon from "@mui/icons-material/DeleteForeverRounded";
-import ModeEditSharpIcon from "@mui/icons-material/ModeEditSharp";
-import AddSharpIcon from '@mui/icons-material/AddSharp';
+import CssBaseline from "@mui/material/CssBaseline";
+import TextField from "@mui/material/TextField";
+import FormControlLabel from "@mui/material/FormControlLabel";
+import Checkbox from "@mui/material/Checkbox";
+import Link from "@mui/material/Link";
+import Paper from "@mui/material/Paper";
+import Box from "@mui/material/Box";
+import Grid from "@mui/material/Grid";
+import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import Typography from "@mui/material/Typography";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-const Subject = () => {
-  const SubjectQuestions = [
-    {
-      id: 1,
-      question: "Write a program to print Hello World",
-    },
-    {
-      id: 2,
-      question: "Write a program to add two numbers",
-    },
-    {
-      id: 3,
-      question: "Write a program to find the factorial of a number",
-    },
-    {
-      id: 4,
-      question: "Write a program to find the sum of n natural numbers",
-    },
-  ];
+import Vector from "../public/images/se-vector.png";
+import InputLabel from "@mui/material/InputLabel";
+import MenuItem from "@mui/material/MenuItem";
+import Select from "@mui/material/Select";
+import FormControl from "@mui/material/FormControl";
+import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
+
+// function Copyright(props) {
+//   return (
+//     <Typography
+//       variant="body2"
+//       color="text.secondary"
+//       align="center"
+//       {...props}
+//     >
+//       {"Copyright © "}
+//       <Link color="inherit" href="https://mui.com/">
+//         Your Website
+//       </Link>{" "}
+//       {new Date().getFullYear()}
+//       {"."}
+//     </Typography>
+//   );
+// }
+
+const theme = createTheme();
+
+export default function SignInSide() {
+  const [user, setUser] = React.useState("");
+
+  const handleChange = (event) => {
+    setUser(event.target.value);
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const data = new FormData(event.currentTarget);
+    console.log({
+      email: data.get("email"),
+      password: data.get("password"),
+    });
+  };
 
   return (
-    <>
-      <div className="mt-16 left-10">
-        <Button
-          variant="contained"
-          href="#contained-buttons"
-          size="large"
-          className="mt-10"
-        >
-          <span>
-            <AddSharpIcon />
-          </span>
-          Add Question
-        </Button>
-        {SubjectQuestions?.map((question) => (
-          <Box sx={{ minHeight: 150 }} className="mt-4">
-            <Card
-              variant="outlined"
-              sx={(theme) => ({
-                backgroundColor: "#202037",
-                width: 1500,
-                height: 100,
-                gridColumn: "span 2",
-                flexDirection: "row",
-                flexWrap: "wrap",
-                resize: "horizontal",
-                overflow: "hidden",
-                gap: "clamp(0px, (100% - 360px + 32px) * 999, 16px)",
-                transition: "transform 0.3s, border 0.3s",
-                "&:hover": {
-                  borderColor: theme.vars.palette.primary.outlinedHoverBorder,
-                  transform: "translateY(-5px)",
-                },
-                "& > *": { minWidth: "clamp(0px, (360px - 100%) * 999,100%)" },
-              })}
-            >
-              <Box
-                sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  gap: 2,
-                  maxWidth: 1000,
-                }}
-              >
-                <div className="flex">
-                  <div className="flex">
-                    <Avatar>{question.id}</Avatar>
-                    <Typography
-                      variant="h6"
-                      fontWeight="bold"
-                      className="ml-2 mt-2"
-                    >
-                      {question.question}
-                    </Typography>
-                    <Button
-                      variant="contained"
-                      href="#contained-buttons"
-                      size="large"
-                      className="mt-10"
-                    >
-                      <span>
-                        <ModeEditSharpIcon />
-                      </span>
-                      Edit
-                    </Button>
-                    <Button
-                      variant="contained"
-                      href="#contained-buttons"
-                      className="mt-10"
-                      color="error"
-                    >
-                      <span>
-                        <DeleteForeverRoundedIcon />
-                      </span>
-                      Delete
-                    </Button>
-                  </div>
-                </div>
-              </Box>
-            </Card>
-          </Box>
-        ))}
-      </div>
-      {/* <Box sx={{ minHeight: 350 }}>
-      <Card
-        variant="outlined"
-        sx={(theme) => ({
-          width: 300,
-          gridColumn: 'span 2',
-          flexDirection: 'row',
-          flexWrap: 'wrap',
-          resize: 'horizontal',
-          overflow: 'hidden',
-          gap: 'clamp(0px, (100% - 360px + 32px) * 999, 16px)',
-          transition: 'transform 0.3s, border 0.3s',
-          '&:hover': {
-            borderColor: theme.vars.palette.primary.outlinedHoverBorder,
-            transform: 'translateY(-2px)',
-          },
-          '& > *': { minWidth: 'clamp(0px, (360px - 100%) * 999,100%)' },
-        })}
-      >
-        <Box
+    <ThemeProvider theme={theme}>
+      <Grid container component="main" sx={{ height: "100vh" }}>
+        <CssBaseline />
+        <Grid
+          item
+          xs={false}
+          sm={4}
+          md={7}
           sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            gap: 2,
-            maxWidth: 200,
+            backgroundImage: `url(${Vector})`,
+            backgroundRepeat: "no-repeat",
+            backgroundColor: (t) =>
+              t.palette.mode === "light"
+                ? t.palette.grey[50]
+                : t.palette.grey[900],
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
-        >
-          <AspectRatio
-            variant="soft"
+        />
+        <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
+          <Box
             sx={{
-              '--AspectRatio-paddingBottom':
-                'clamp(0px, (100% - 200px) * 999, 200px)',
-              pointerEvents: 'none',
+              my: 20,
+              mx: 4,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
             }}
           >
-            <img
-              alt=""
-              src="https://images.unsplash.com/photo-1492305175278-3b3afaa2f31f?auto=format&fit=crop&w=2262"
-            />
-          </AspectRatio>
-          <Box sx={{ display: 'flex', gap: 1.5, mt: 'auto' }}>
-            <Avatar variant="soft" color="neutral">
-              Y
+            <Avatar sx={{ m: 1, bgcolor: "primary.main" }}>
+              <AccountCircleSharpIcon />
             </Avatar>
-            <div>
-              <Typography level="body2">Designed by</Typography>
-              <Typography fontWeight="lg" level="body2">
-                Nature itself
-              </Typography>
-            </div>
+            <Typography component="h1" variant="h5">
+              Sign in
+            </Typography>
+            <Box
+              component="form"
+              noValidate
+              onSubmit={handleSubmit}
+              sx={{ mt: 1 }}
+            >
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                id="email"
+                label="Email Address"
+                name="email"
+                autoComplete="email"
+                autoFocus
+              />
+              <TextField
+                margin="normal"
+                required
+                fullWidth
+                name="password"
+                label="Password"
+                type="password"
+                id="password"
+                autoComplete="current-password"
+              />
+              <FormControl sx={{ mt:2, mb:2, minWidth: 0  }} fullWidth required>
+                <InputLabel id="demo-simple-select-helper-label">
+                  User
+                </InputLabel>
+                <Select
+                  labelId="demo-simple-select-helper-label"
+                  id="demo-simple-select-helper"
+                  value={user}
+                  label="User"
+                  onChange={handleChange}
+                >
+                  <MenuItem value={10}>Student</MenuItem>
+                  <MenuItem value={20}>Faculty</MenuItem>
+                  <MenuItem value={30}>Admin</MenuItem>
+                </Select>
+              </FormControl>
+              <FormControlLabel
+                control={<Checkbox value="remember" color="primary" />}
+                label="Remember me"
+              />
+              <Button
+                type="submit"
+                fullWidth
+                variant="contained"
+                sx={{ mt: 3, mb: 2, py: 1, fontSize: '18px' }}
+                className="f"
+              >
+                Sign In
+              </Button>
+              {/* <Grid container>
+                <Grid item xs>
+                  <Link href="#" variant="body2">
+                    Forgot password?
+                  </Link>
+                </Grid>
+                <Grid item>
+                  <Link href="#" variant="body2">
+                    {"Don't have an account? Sign Up"}
+                  </Link>
+                </Grid>
+              </Grid> */}
+              {/* <Copyright sx={{ mt: 5 }} /> */}
+            </Box>
           </Box>
-        </Box>
-      </Card>
-    </Box> */}
-    </>
+        </Grid>
+      </Grid>
+    </ThemeProvider>
   );
-};
-
-export default Subject;
+}

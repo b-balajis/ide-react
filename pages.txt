@@ -44,6 +44,6 @@ FACULTY: (with JR Assistant)
 STUDENT:
         JNTU, Name, Mail, Phone Number, password, Dept, Admitted Year (batch)
 SUBJECTS:
-        ID, Name, Dept
+        ID, Name, Dept, credits 
 SUBJECT:
         QNo(ID), Qname, Test cases, Faculty Name
