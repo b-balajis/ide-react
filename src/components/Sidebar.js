@@ -39,7 +39,7 @@ const Sidebar = () => {
                                     Dashboard
                                 </NavLink>
                             </li>
-                            <li className="rounded-lg mb-2  hover:bg-blue-500 duration-300 ...">
+                            <li className="rounded-lg mb-2 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 ...">
                                 <NavLink
                                     to="/subjects"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"

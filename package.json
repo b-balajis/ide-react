@@ -1,5 +1,5 @@
 {
-  "name": "material-tailwind-dashboard-react",
+  "name": "automated-programming-evaluation",
   "version": "1.1.0",
   "private": true,
   "dependencies": {
@@ -17,10 +17,12 @@
     "@testing-library/user-event": "^12.1.10",
     "chart.js": "2.9.4",
     "dayjs": "^1.11.7",
+    "export-from-json": "^1.7.0",
     "firebase-tools": "^11.18.0",
     "react": "^17.0.2",
     "react-animated-3d-card": "^1.0.2",
     "react-dom": "^17.0.2",
+    "react-json-to-csv": "^1.2.0",
     "react-router-dom": "^6.6.1",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.0.1"

@@ -2,7 +2,6 @@ import { Route, Routes } from 'react-router-dom';
 import Sidebar from 'components/Sidebar';
 import Dashboard from 'pages/Dashboard';
 import Settings from 'pages/Settings';
-import Tables from 'pages/Tables';
 import Maps from 'pages/Maps';
 import Footer from 'components/Footer';
 
@@ -26,7 +25,6 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/settings" element={<Settings/>} />
-                    <Route path="/tables" element={<Tables/>} />
                     <Route path="/maps" element={<Maps/>} />
                     <Route path="/subjects" element={<Subjects />} />
                     <Route path="/subject" element={<Subject />} />

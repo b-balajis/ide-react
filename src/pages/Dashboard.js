@@ -1,15 +1,27 @@
-import StatusCard from 'components/StatusCard';
-import ChartLine from 'components/ChartLine';
-import ChartBar from 'components/ChartBar';
-import PageVisitsCard from 'components/PageVisitsCard';
-import TrafficCard from 'components/TrafficCard';
+// import StatusCard from 'components/StatusCard';
+// import ChartLine from 'components/ChartLine';
+// import ChartBar from 'components/ChartBar';
+// import PageVisitsCard from 'components/PageVisitsCard';
+// import TrafficCard from 'components/TrafficCard';
+
+// import StudentDashboard from 'components/StudentDashboard';
+import FacultyDashboard from 'components/FacultyDashboard';
 
 const Dashboard = () => {
     return (
         <>
-            <div className="bg-blue-500 px-3 md:px-8 h-40" />
+        
+            <div className="bg-blue-500 px-3 md:px-8 h-20" />
+            <div className="px-3 md:px-8 h-auto bg-blue-500 mb-96">
+                <div className="container mx-auto max-w-full">
+                        <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
+                            {/* <StudentDashboard /> */}
+                            <FacultyDashboard />
+                        </div>
+                </div>
+            </div>
 
-            <div className="px-3 md:px-8 -mt-24">
+            {/* <div className="px-3 md:px-8 -mt-24">
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-5">
                         <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
@@ -20,9 +32,9 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="px-3 md:px-8">
+            {/* <div className="px-3 md:px-8">
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4">
                         <StatusCard
@@ -67,9 +79,9 @@ const Dashboard = () => {
                         />
                     </div>
                 </div>
-            </div>
+            </div> */}
 
-            <div className="px-3 md:px-8 h-auto">
+            {/* <div className="px-3 md:px-8 h-auto bg-blue-500">
                 <div className="container mx-auto max-w-full">
                     <div className="grid grid-cols-1 xl:grid-cols-5">
                         <div className="xl:col-start-1 xl:col-end-4 px-4 mb-14">
@@ -80,7 +92,7 @@ const Dashboard = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> */}
         </>
     );
 };

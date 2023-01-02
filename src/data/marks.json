@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "marks": 10,
+    "grade": "A+"
+  },
+  {
+    "id": 2,
+    "marks": 10,
+    "grade": "A+"
+  },
+  {
+    "id": 3,
+    "marks": 10,
+    "grade": "A+"
+  },
+  {
+    "id": 4,
+    "marks": 10,
+    "grade": "A+"
+  },
+  {
+    "id": 5,
+    "marks": 10,
+    "grade": "A+"
+  }
+]
