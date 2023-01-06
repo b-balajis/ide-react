@@ -5,8 +5,8 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import Python from "../data/python.json";
-import Marks from "../data/marks.json";
+import Python from "../../data/python.json";
+import Marks from "../../data/marks.json";
 import Divider from "@mui/material/Divider";
 
 export default function BasicTable() {

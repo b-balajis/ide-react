@@ -5,11 +5,11 @@ import TableCell, { tableCellClasses } from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
-import StudentDetails from "../data/studentdetails.json";
+import StudentDetails from "../../data/studentdetails.json";
 import Divider from "@mui/material/Divider";
 import { TableHead } from "@mui/material";
 import TablePagination from "@mui/material/TablePagination";
-import DownloadFile from "./DownloadFile";
+import DownloadFile from "../../components/DownloadFile";
 
 export default function BasicTable() {
   const [page, setPage] = React.useState(0);

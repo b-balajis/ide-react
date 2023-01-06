@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import Avatar from "@mui/material/Avatar";
 import Button from "@mui/material/Button";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,47 +12,62 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import Vector from "../public/images/se-vector.png";
+import Vector from "../assets/images/se-vector.png";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import FormControl from "@mui/material/FormControl";
-import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
-
-// function Copyright(props) {
-//   return (
-//     <Typography
-//       variant="body2"
-//       color="text.secondary"
-//       align="center"
-//       {...props}
-//     >
-//       {"Copyright © "}
-//       <Link color="inherit" href="https://mui.com/">
-//         Your Website
-//       </Link>{" "}
-//       {new Date().getFullYear()}
-//       {"."}
-//     </Typography>
-//   );
-// }
+import AccountCircleSharpIcon from "@mui/icons-material/AccountCircleSharp";
+import { useForm } from "react-hook-form";
+import InputAdornment from "@mui/material/InputAdornment";
+import IconButton from "@mui/material/IconButton";
+import Visibility from "@mui/icons-material/Visibility";
+import VisibilityOff from "@mui/icons-material/VisibilityOff";
 
 const theme = createTheme();
-
-export default function SignInSide() {
+const SignIn = () => {
   const [user, setUser] = React.useState("");
+  const [showPassword, setShowPassword] = useState(false);
+  const handleClickShowPassword = () => setShowPassword(!showPassword);
+  const handleMouseDownPassword = () => setShowPassword(!showPassword);
 
+  const {
+    register,
+    formState: { errors },
+  } = useForm({ mode: "onChange" });
   const handleChange = (event) => {
     setUser(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSignIn = (event) => {
     event.preventDefault();
     const data = new FormData(event.currentTarget);
-    console.log({
-      email: data.get("email"),
-      password: data.get("password"),
-    });
+    let selectUser = data.get("selectUser");
+    console.log(selectUser);
+    if (selectUser === "s") {
+      window.location.href = "/s/dashboard";
+    }
+    else if (selectUser === "f"){
+      window.location.href = "/f/dashboard";
+    }
+    else if (selectUser === "a"){
+      window.location.href = "/a/dashboard";
+    }
+  };
+    const emailvalidations = {
+    required: "Email is required",
+    pattern: {
+      value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+      message: "Invalid email address",
+    },
+  };
+
+  const passwordValidations = {
+    required: "Password is required",
+    minLength: {
+      value: 8,
+      message: "Password must have at least 8 characters",
+    },
   };
 
   return (
@@ -94,7 +109,7 @@ export default function SignInSide() {
             <Box
               component="form"
               noValidate
-              onSubmit={handleSubmit}
+              onSubmit={handleSignIn}
               sx={{ mt: 1 }}
             >
               <TextField
@@ -106,63 +121,74 @@ export default function SignInSide() {
                 name="email"
                 autoComplete="email"
                 autoFocus
+                {...register("email", emailvalidations)}
               />
+              {errors.email && (
+                <span className="text-red">{errors.email.message}</span>
+              )}
               <TextField
-                margin="normal"
-                required
-                fullWidth
-                name="password"
                 label="Password"
-                type="password"
-                id="password"
-                autoComplete="current-password"
+                fullWidth
+                variant="outlined"
+                type={showPassword ? "text" : "password"} // <-- This is where the magic happens
+                // onChange=
+                InputProps={{
+                  // <-- This is where the toggle button is added.
+                  endAdornment: (
+                    <InputAdornment position="end">
+                      <IconButton
+                        aria-label="toggle password visibility"
+                        onClick={handleClickShowPassword}
+                        onMouseDown={handleMouseDownPassword}
+                      >
+                        {showPassword ? <Visibility /> : <VisibilityOff />}
+                      </IconButton>
+                    </InputAdornment>
+                  ),
+                }}
+                {...register("password", passwordValidations)}
               />
-              <FormControl sx={{ mt:2, mb:2, minWidth: 0  }} fullWidth required>
-                <InputLabel id="demo-simple-select-helper-label">
-                  User
-                </InputLabel>
+              {errors.password && (
+                <span className="text-red">{errors.password.message}</span>
+              )}
+              <FormControl
+                sx={{ mt: 2, mb: 2, minWidth: 0 }}
+                fullWidth
+                required
+              >
+                <InputLabel id="selectUser">User</InputLabel>
                 <Select
-                  labelId="demo-simple-select-helper-label"
-                  id="demo-simple-select-helper"
+                  labelId="selectUser"
+                  id="selectUser"
                   value={user}
                   label="User"
+                  name="selectUser"
                   onChange={handleChange}
                 >
-                  <MenuItem value={10}>Student</MenuItem>
-                  <MenuItem value={20}>Faculty</MenuItem>
-                  <MenuItem value={30}>Admin</MenuItem>
+                  <MenuItem value="s">Student</MenuItem>
+                  <MenuItem value="f">Faculty</MenuItem>
+                  <MenuItem value="a">Admin</MenuItem>
                 </Select>
               </FormControl>
               <FormControlLabel
                 control={<Checkbox value="remember" color="primary" />}
                 label="Remember me"
+                name="check"
               />
               <Button
                 type="submit"
                 fullWidth
                 variant="contained"
-                sx={{ mt: 3, mb: 2, py: 1, fontSize: '18px' }}
-                className="f"
+                sx={{ mt: 3, mb: 2, py: 1, fontSize: "18px" }}
               >
                 Sign In
               </Button>
-              {/* <Grid container>
-                <Grid item xs>
-                  <Link href="#" variant="body2">
-                    Forgot password?
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href="#" variant="body2">
-                    {"Don't have an account? Sign Up"}
-                  </Link>
-                </Grid>
-              </Grid> */}
-              {/* <Copyright sx={{ mt: 5 }} /> */}
             </Box>
           </Box>
         </Grid>
       </Grid>
     </ThemeProvider>
   );
-}
+};
+
+export default SignIn;
