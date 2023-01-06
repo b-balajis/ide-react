@@ -8,6 +8,7 @@
 import FacultyDashboard from 'components/FacultyDashboard';
 
 const Dashboard = () => {
+    console.log('hello');
     return (
         <>
         
