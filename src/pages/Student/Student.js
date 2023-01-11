@@ -4,7 +4,7 @@ import Sidebar from "./Sidebar";
 import StudentDashboard from "./StudentDashboard";
 import Subjects from "./Subjects"
 import Subject from "./Subject";
-import { Routes, Route } from 'react-router-dom';
+// import { Routes, Route } from 'react-router-dom';
 
 const Student = () => {
   const { type } = useParams();

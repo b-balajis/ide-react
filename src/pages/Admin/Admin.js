@@ -1,5 +1,4 @@
 import React from 'react'
-import Dashboard from 'pages/Dashboard';
 import { useParams } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import AddStudent from './AddStudent';

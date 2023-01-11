@@ -6,12 +6,12 @@ import "@sl-codeblaster/react-3d-animated-card";
 import Python from "../../assets/images/python.jpg";
 import Java from "../../assets/images/Java.jpg";
 import CPP from "../../assets/images/cpp.jpg";
-import { useParams } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 // import Subject from "./Subject";
 import { NavLink } from 'react-router-dom';
 
 const Subjects = () => {
-  const { type } = useParams();
+  // const { type } = useParams();
   const SubjectDetails = [
     {
       id: 1,
