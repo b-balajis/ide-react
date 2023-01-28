@@ -1,0 +1,226 @@
+{
+    "Python" : [
+        {
+            "id": 1,
+            "qno": 1,
+            "question": "Write a program to print Hello World",
+            "sampleinput": "",
+            "sampleoutput": "Hello World",
+            "testcases":
+            [
+                {
+                    "input": "",
+                    "output": "Hello World"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "qno": 2,
+            "question": "Write a program to sum two numbers",
+            "sampleinput": "2 3",
+            "sampleoutput": "5",
+            "testcases":
+            [
+                {
+                    "input": "2 3",
+                    "output": "5"
+                },
+                {
+                    "input": "5 6",
+                    "output": "11"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "qno": 3,
+            "question": "Write a program to find the factorial of a number",
+            "sampleinput": "5",
+            "sampleoutput": "120",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "1"
+                },
+                {
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "input": "5",
+                    "output": "120"
+                },
+                {
+                    "input": "6",
+                    "output": "720"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "qno": 4,
+            "question": "Write a program to find the sum of first n natural numbers",
+            "sampleinput": "5",
+            "sampleoutput": "15",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "0"
+                },
+                {
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "input": "5",
+                    "output": "15"
+                },
+                {
+                    "input": "6",
+                    "output": "21"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "qno": 5,
+            "question": "Write a program to find the sum of first n odd numbers",
+            "sampleinput": "5",
+            "sampleoutput": "25",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "0"
+                },
+                {
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "input": "5",
+                    "output": "25"
+                },
+                {
+                    "input": "6",
+                    "output": "36"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "qno": 6,
+            "question": "Write a program to find the sum of first n even numbers",
+            "sampleinput": "5",
+            "sampleoutput": "30",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "0"
+                },
+                {
+                    "input": "1",
+                    "output": "0"
+                },
+                {
+                    "input": "5",
+                    "output": "30"
+                },
+                {
+                    "input": "6",
+                    "output": "42"
+                }
+            ]
+        }
+    ],
+    "C" : [
+        {
+            "id": 1,
+            "qno": 1,
+            "question": "Write a program to print Hello World",
+            "sampleinput": "",
+            "sampleoutput": "Hello World",
+            "testcases":
+            [
+                {
+                    "input": "",
+                    "output": "Hello World"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "qno": 2,
+            "question": "Write a program to sum two numbers",
+            "sampleinput": "2 3",
+            "sampleoutput": "5",
+            "testcases":
+            [
+                {
+                    "input": "2 3",
+                    "output": "5"
+                },
+                {
+                    "input": "5 6",
+                    "output": "11"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "qno": 3,
+            "question": "Write a program to find the factorial of a number",
+            "sampleinput": "5",
+            "sampleoutput": "120",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "1"
+                },
+                {
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "input": "5",
+                    "output": "120"
+                },
+                {
+                    "input": "6",
+                    "output": "720"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "qno": 4,
+            "question": "Write a program to find the sum of first n natural numbers",
+            "sampleinput": "5",
+            "sampleoutput": "15",
+            "testcases":
+            [
+                {
+                    "input": "0",
+                    "output": "0"
+                },
+                {
+                    "input": "1",
+                    "output": "1"
+                },
+                {
+                    "input": "5",
+                    "output": "15"
+                },
+                {
+                    "input": "6",
+                    "output": "21"
+                }
+            ]
+        }
+    ]
+}

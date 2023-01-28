@@ -3,9 +3,9 @@ import { createContext, useContext, useState } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const [theme, setTheme] = useState("tomorrow_night_eighties");
+  const [theme, setTheme] = useState("tomorrow_night");
   const [fontFamily, setFontFamily] = useState("Consolas");
-  const [fontSize, setFontSize] = useState(15);
+  const [fontSize, setFontSize] = useState(24);
   const [wrap, setWrap] = useState(true);
   const [showLineNumbers, setShowLineNumbers] = useState(true);
   const [alignment, setAlignment] = useState("right");

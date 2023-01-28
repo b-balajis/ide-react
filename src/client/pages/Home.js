@@ -5,7 +5,6 @@ import Header from "../components/Header"
 
 const Home = () => {
   const { language } = useEditor() || {};
-  console.log("language");
   return (
     <div className="h-full bg-black">
       <Header />

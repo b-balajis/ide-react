@@ -36,7 +36,7 @@ const Subjects = () => {
         {SubjectDetails?.map((subject) => (
             <div className="flex flex-wrap text-center mr-4">
                 <div className="border rounded-lg transform transition duration-500 hover:scale-110">
-                  <NavLink to={subject.name} ><img src={subject.image} alt={subject.name} className="h-40 w-64 rounded-xl"/></NavLink>
+                  <NavLink to={subject.name.toLowerCase()} ><img src={subject.image} alt={subject.name} className="h-40 w-64 rounded-xl"/></NavLink>
                 </div>
               </div>
         ))}

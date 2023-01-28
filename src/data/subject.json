@@ -1,0 +1,88 @@
+[
+    {
+        "id":1,
+        "qno":1,
+        "question":"Write a program to print the sum of two numbers",
+        "description": "To print sum of two numbers",
+        "input":"2\n3",
+        "output":"5",
+        "testcases":[
+            {
+                "input":"1\n2",
+                "output":"3\n"
+            },
+            {
+                "input":"1\n3",
+                "output":"4\n"
+            },
+            {
+                "input":"1\n4",
+                "output":"5\n"
+            },
+            {
+                "input":"1\n5",
+                "output":"6\n"
+            },
+            {
+                "input":"1\n6",
+                "output":"7\n"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "qno": 2,
+        "question": "Write a program to print the sum of three numbers",
+        "description": "To print sum of three numbers",
+        "input": "2\n3\n4",
+        "output": "9",
+        "testcases": [
+            {
+                "input": "1\n2\n3",
+                "output": "6\n"
+            },
+            {
+                "input": "1\n3\n4",
+                "output": "8\n"
+            },
+            {
+                "input": "1\n4\n5",
+                "output": "10\n"
+            },
+            {
+                "input": "1\n5\n6",
+                "output": "12\n"
+            },
+            {
+                "input": "1\n6\n7",
+                "output": "14\n"
+            }
+        ]
+    },
+    {
+        "id":3,
+        "qno":3,
+        "question": "Write a program to print factorial",
+        "description": "To print factorial of a number",
+        "input": "5",
+        "output": "120",
+        "testcases": [
+            {
+                "input": "1",
+                "output": "1\n"
+            },
+            {
+                "input": "4",
+                "output": "24\n"
+            },
+            {
+                "input": "5",
+                "output": "120\n"
+            },
+            {
+                "input": "6",
+                "output": "70\n"
+            }
+        ]
+    }
+]

@@ -30,7 +30,7 @@ const Sidebar = () => {
                         <ul className="flex-col min-w-full flex list-none">
                             <li className="rounded-lg mb-4 hover:-translate-y-1 hover:scale-110 hover:bg-blue-500 duration-300 ...">
                                 <NavLink
-                                    to="/f/dashboard"
+                                    to="/a/dashboard"
                                     exact
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
@@ -41,7 +41,7 @@ const Sidebar = () => {
                             </li>
                             <li className="rounded-lg mb-2 hover:bg-blue-600 active:bg-blue-700 focus:outline-none focus:ring focus:ring-blue-300 ...">
                                 <NavLink
-                                    to="/a/addsubjects"
+                                    to="/a/addsubject"
                                     className="flex items-center gap-4 text-sm text-gray-700 font-light px-4 py-3 rounded-lg"
                                     activeClassName="bg-gradient-to-tr from-light-blue-500 to-light-blue-700 text-white shadow-md"
                                 >

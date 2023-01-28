@@ -65,7 +65,7 @@ const WebD = () => {
   };
 
   return (
-    <div className={`grid h-full bg-white mx-auto ${container(alignment)}`}>
+    <div className={`grid h-full bg-blue-500 mx-auto ${container(alignment)}`}>
       {/* Adjust orientation of editors */}
       <div
         className={`flex bg-background p-1 pr-3 gap-4 ${
