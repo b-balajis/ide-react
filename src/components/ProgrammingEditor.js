@@ -1,23 +1,23 @@
 import { useEditor } from "../context/AppContext";
 import CompilerPage from "./CompilerPage";
 import Editor from "./Editor";
-import Subject from "../../data/Subjects.json";
+import { useLocation } from "react-router-dom";
 
 const ProgrammingEditor = () => {
-  const { code, setCode, stdIn, setStdIn, output, language } =
+  const { code, setCode, output } =
     useEditor() || {};
 
-  const subjectName = "Python";
-  const questionNumber = 1 ;
-  const question = Subject[subjectName][questionNumber];
-  console.log(question);
+    const location = useLocation();
+    console.log("location", location.state.subjectName);
+  const question = location.state.question;
+  const subjectName = location.state.subjectName;
  
 
   return (
     <div className="flex flex-col w-4/5 gap-10 p-4 mx-auto mt-3">
       <h1 className="font-bold text-white">{question.qno}. {question.question}</h1>
       <section className="flex-grow h-[80vh]">
-        <Editor language={language} code={code} setCode={setCode} />
+        <Editor language={subjectName} code={code} setCode={setCode} />
       </section>
 
       <CompilerPage question={question} />

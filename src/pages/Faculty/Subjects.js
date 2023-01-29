@@ -3,9 +3,9 @@ import "@sl-codeblaster/react-3d-animated-card";
 
 // import AnimatedCard from "@sl-codeblaster/react-3d-animated-card";
 // import Card from "react-animated-3d-card";
-import Python from "../../assets/images/python.jpg";
-import Java from "../../assets/images/Java.jpg";
-import CPP from "../../assets/images/cpp.jpg";
+import Python from "../../assets/img/python.jpg";
+import Java from "../../assets/img/Java.jpg";
+import CPP from "../../assets/img/cpp.jpg";
 // import { useParams } from "react-router-dom";
 // import Subject from "./Subject";
 import { NavLink } from 'react-router-dom';

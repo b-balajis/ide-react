@@ -40,11 +40,9 @@
     "build:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css --env production",
     "watch:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css -w",
     "start:react": "react-scripts start",
-    "start": "npm-run-all -p server start:react",
-    "server": "nodemon server/server",
+    "start": "npm-run-all -p start:react",
     "serverInstall": "yarn",
     "build": "npm run && react-scripts build",
-    "test": "react-scripts test",
     "eject": "react-scripts eject",
     "npm:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
     "yarn:clean": "rm -rf node_modules/ && rm -rf package-lock.json && yarn install && yarn start"

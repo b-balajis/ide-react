@@ -10,13 +10,7 @@ const Faculty = () => {
     const { type } = useParams();
   return (
     <>
-    <Sidebar />
-    <div className='md:ml-64'>
-      {type === 'dashboard' && <FacultyDashboard />}
-      {type === "subjects" && <Subjects />}
-      {type === "subject" && <Subject />}
-      {type === "addquestion" && <AddQuestion />}
-    </div>
+    hello
     </>
   )
 }

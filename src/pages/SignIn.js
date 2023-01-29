@@ -12,7 +12,7 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
-import Vector from "../assets/images/se-vector.png";
+import Vector from "../assets/img/se-vector.png";
 import InputLabel from "@mui/material/InputLabel";
 import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
@@ -45,13 +45,13 @@ const SignIn = () => {
     let selectUser = data.get("selectUser");
     console.log(selectUser);
     if (selectUser === "s") {
-      window.location.href = "/s/dashboard";
+      window.location.href = "/s/";
     }
     else if (selectUser === "f"){
-      window.location.href = "/f/dashboard";
+      window.location.href = "/f/";
     }
     else if (selectUser === "a"){
-      window.location.href = "/a/dashboard";
+      window.location.href = "/a/";
     }
   };
     const emailvalidations = {
