@@ -5,23 +5,27 @@ import qs from "qs";
 import { useState } from "react";
 
 const CompileButton = (props) => {
-  const { language, code, stdIn, setOutput, isSubmitting, setIsSubmitting } =
+  const {  code, setOutput, setError, isSubmitting, setIsSubmitting } =
     useEditor() || {};
 
   const question = props.question;
   const noofTestCases = question.testcases;
-  console.log(noofTestCases);
-
   // Submit code to server
 
   const [responseData, setResponseData] = useState(null);
 
-  const handleSubmission2 = async () => {
-    for (let i = 0; i < 10; i++) {
+  console.log("response data", responseData);
+
+  const handleSubmission = async () => {
+    setIsSubmitting(true);
+    let noofTestCasesPassed = 0;
+    for (let x in noofTestCases) {
+      const testcaseInput = noofTestCases[x].input;
+      const testcaseOutput = noofTestCases[x].output;
       const data = qs.stringify({
         code: code,
         language: "py",
-        input: stdIn,
+        input: testcaseInput,
       });
       const config = {
         method: "post",
@@ -35,49 +39,28 @@ const CompileButton = (props) => {
       try {
         const response = await axios(config);
         setResponseData(response.data);
-        console.log("output", response.data);
+        console.log("data", response.data);
+        const actualOutput = response.data.output;
+        const error = response.data.error;
+        if ( error !== "" ){
+          console.log("error", error);
+          setError(error);
+          break;
+        }
+        if (actualOutput === testcaseOutput && error === ""){
+          noofTestCasesPassed++;
+        }
+        else{
+          console.log("actual output", actualOutput);
+          console.log("Test Case Failed");
+          break;
+        }
       } catch (err) {
         console.error(err);
       }
-      console.log("count", i);
     }
-  };
-  const handleSubmission = async () => {
-    setIsSubmitting(true);
-    let nooftestCasesPassed = 0;
-    const totaltestCases = noofTestCases.length;
-    console.log("total", totaltestCases);
-    for (let x in noofTestCases) {
-      const testcaseInput = noofTestCases[x].input;
-      const testcaseOutput = noofTestCases[x].output;
-      // console.log("input & output", testcaseInput, testcaseOutput);
-      const body = JSON.stringify({
-        script: code,
-        stdin: testcaseInput,
-        language,
-      });
-      const config = { headers: { "Content-type": "application/json" } };
-
-      const res = await axios.post(
-        "http://localhost:5000/api/submission",
-        body,
-        config
-      );
-
-      const data = res.data;
-      const actualOutput = data.output;
-      console.log("data", data);
-      if (testcaseOutput === actualOutput) {
-        nooftestCasesPassed++;
-      } else {
-        console.log("Test Case Failed");
-        setOutput(data);
-        break;
-      }
-    }
-    const outputdata = [nooftestCasesPassed, totaltestCases];
-    setOutput(outputdata);
-
+    const output = [noofTestCasesPassed, noofTestCases.length]
+    setOutput(output)
     setIsSubmitting(false);
   };
 
@@ -103,7 +86,7 @@ const CompileButton = (props) => {
         variant="contained"
         color="primary"
         size="large"
-        onClick={handleSubmission2}
+        onClick={handleSubmission}
       >
         {isSubmitting ? "Compiling..." : "Run"}
       </Button>

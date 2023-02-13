@@ -5,6 +5,7 @@ import AddStudent from './AddStudent';
 import AddFaculty from './AddFaculty';
 import AddSubject from "./AddSubject";
 import FacultyDashboard from './FacultyDashboard';
+import AddQuestion from './AddQuestion';
 
 const Admin = () => {
   const { type } = useParams();
@@ -16,6 +17,7 @@ const Admin = () => {
       {type === 'addstudent' && <AddStudent />}
       {type === 'addfaculty' && <AddFaculty />}
       {type === 'addsubject' && <AddSubject />}
+      {type === 'addquestion' && <AddQuestion />}
     </div>
     </>
   )

@@ -10,6 +10,7 @@ import Divider from "@mui/material/Divider";
 import { TableHead } from "@mui/material";
 import TablePagination from "@mui/material/TablePagination";
 import DownloadFile from "../../components/DownloadFile";
+import Navbar from "./Navbar";
 
 export default function BasicTable() {
   const [page, setPage] = React.useState(0);
@@ -40,6 +41,7 @@ export default function BasicTable() {
   ]
   return (
     <>
+    <Navbar />
     <DownloadFile data={StudentDetails} headers={headers} filename="studentdetails.csv" />
       <Paper sx={{ width: "100%", overflow: "hidden" }}>
         <TableContainer component={Paper}>

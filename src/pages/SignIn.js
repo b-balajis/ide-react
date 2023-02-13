@@ -124,11 +124,12 @@ const SignIn = () => {
                 {...register("email", emailvalidations)}
               />
               {errors.email && (
-                <span className="text-red">{errors.email.message}</span>
+                <span className="text-red mb-6">{errors.email.message}</span>
               )}
               <TextField
                 label="Password"
                 fullWidth
+                className="mt-10"
                 variant="outlined"
                 type={showPassword ? "text" : "password"} // <-- This is where the magic happens
                 // onChange=
@@ -149,7 +150,7 @@ const SignIn = () => {
                 {...register("password", passwordValidations)}
               />
               {errors.password && (
-                <span className="text-red">{errors.password.message}</span>
+                <span className="text-red mb-6">{errors.password.message}</span>
               )}
               <FormControl
                 sx={{ mt: 2, mb: 2, minWidth: 0 }}

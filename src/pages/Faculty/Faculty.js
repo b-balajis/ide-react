@@ -1,16 +1,12 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import Sidebar from "./Sidebar";
-import FacultyDashboard from './FacultyDashboard';
-import Subjects from './Subjects';
-import Subject from './Subject';
-import AddQuestion from './AddQuestion';
+import Navbar from "./Navbar"
+import ListofSubjects from "./ListofSubjects"
 
 const Faculty = () => {
-    const { type } = useParams();
   return (
     <>
-    hello
+    <Navbar />
+    <ListofSubjects />
     </>
   )
 }

@@ -9,7 +9,7 @@ export const AppProvider = ({ children }) => {
   const [wrap, setWrap] = useState(true);
   const [showLineNumbers, setShowLineNumbers] = useState(true);
   const [alignment, setAlignment] = useState("right");
-  const [language, setLanguage] = useState("cpp");
+  const [language, setLanguage] = useState("python");
 
   const [code, setCode] = useState("");
   const [stdIn, setStdIn] = useState("");
@@ -19,6 +19,7 @@ export const AppProvider = ({ children }) => {
 
   const [headTags, setHeadTags] = useState("");
   const [cssFramework, setCssFramework] = useState("none");
+  const [error, setError] = useState("");
 
   return (
     <AppContext.Provider
@@ -49,6 +50,8 @@ export const AppProvider = ({ children }) => {
         setHeadTags,
         cssFramework,
         setCssFramework,
+        error,
+        setError,
       }}
     >
       {children}

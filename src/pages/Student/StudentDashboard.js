@@ -8,9 +8,12 @@ import Paper from "@mui/material/Paper";
 import Python from "../../data/python.json";
 import Marks from "../../data/marks.json";
 import Divider from "@mui/material/Divider";
+import Navbar from "./Navbar"
 
 export default function BasicTable() {
   return (
+    <>
+    <Navbar />
     <TableContainer component={Paper}>
       <Table
         sx={{
@@ -55,5 +58,6 @@ export default function BasicTable() {
         <Divider />
       </Table>
     </TableContainer>
+    </>
   );
 }

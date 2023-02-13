@@ -14,7 +14,7 @@ import MenuItem from "@mui/material/MenuItem";
 import GMRIT from "../../assets/img/GMRITNavLogo.jpg";
 import { NavLink } from "react-router-dom";
 
-const pages = ["Home", "Dashboard", "Stats"];
+const pages = ["Home", "Dashboard", "Blog"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
@@ -95,7 +95,7 @@ const Navbar = () => {
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <NavLink
-                    to={`/s/${page.toLowerCase()}`}
+                    to={`/f/${page.toLowerCase()}`}
                     onClick={clicked}
                   >
                   <Typography textAlign="center">{page}</Typography>
@@ -125,7 +125,7 @@ const Navbar = () => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <NavLink
-                to={`/s/${page.toLowerCase()}`}
+                to={`/f/${page.toLowerCase()}`}
               >
                 <Button
                 key={page}
@@ -162,11 +162,7 @@ const Navbar = () => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <NavLink
-                    to={`/s/${setting.toLowerCase()}`} 
-                  >
-                    <Typography textAlign="center">{setting}</Typography>
-                  </NavLink>
+                  <Typography textAlign="center">{setting}</Typography>
                 </MenuItem>
               ))}
             </Menu>

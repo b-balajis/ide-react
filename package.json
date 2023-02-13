@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "dependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.20.5",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@material-tailwind/react": "^0.3.4",

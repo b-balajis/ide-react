@@ -1058,6 +1058,9 @@ video {
 .pr-3 {
   padding-right: 0.75rem;
 }
+.text-red{
+  color: #ff0000;
+}
 .text-left {
   text-align: left;
 }
