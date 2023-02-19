@@ -23,6 +23,7 @@ import InputAdornment from "@mui/material/InputAdornment";
 import IconButton from "@mui/material/IconButton";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
+import Navbar from "./Navbar";
 
 
 // function Copyright(props) {
@@ -70,6 +71,8 @@ export default function SignUp() {
   };
 
   return (
+    <>
+    <Navbar />
     <ThemeProvider theme={theme}>
       <Container component="main">
         <CssBaseline />
@@ -202,5 +205,6 @@ export default function SignUp() {
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
     </ThemeProvider>
+  </>
   );
 }

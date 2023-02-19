@@ -38,7 +38,7 @@ const Subjects = () => {
       <div className="flex items-center justify-center">
         {SubjectDetails?.map((subject) => (
           <div className="flex flex-wrap text-center mr-4">
-            <div className="border rounded-lg transform transition duration-500 hover:scale-110">
+            <div className="border rounded-lg transform transition duration-500 hover:scale-110 mt-20">
               <NavLink
                 to={`${subject.name.toLowerCase()}`}
                 key={subject.name}

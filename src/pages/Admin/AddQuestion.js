@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const theme = createTheme();
 
@@ -51,6 +52,8 @@ const AddQuestion = () => {
 
 
   return (
+    <>
+    <Navbar />
     <ThemeProvider theme={theme}>
       <Container component="main">
         <CssBaseline />
@@ -163,6 +166,7 @@ const AddQuestion = () => {
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
     </ThemeProvider>
+  </>
   );
 };
 

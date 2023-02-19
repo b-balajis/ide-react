@@ -14,7 +14,13 @@ import StudentSubject from "./pages/Student/Subject";
 import Profile from "./pages/Student/Profile";
 import StudentDashboard from "./pages/Student/StudentDashboard";
 import FacultyDashboard from "./pages/Faculty/FacultyDashboard";
+import AdminDashboard from "./pages/Admin/AdminDashboard";
+import AddStudent from "./pages/Admin/AddStudent";
+import AddFaculty from "./pages/Admin/AddFaculty";
+import AddSubject from "./pages/Admin/AddSubject";
 import Home from "page/Home"
+import AddQuestion from "pages/Faculty/AddQuestion";
+import Management from "pages/Admin/Management";
 
 function App() {
   return (
@@ -28,12 +34,17 @@ function App() {
             </Routes>
             <Routes>
               <Route path="/a" element={<AdminHome />} />
-              <Route path="/a/:type" element={<AdminHome />} />
+              <Route path="/a/dashboard" element={<AdminDashboard />} />
+              <Route path="/a/addstudent" element={<AddStudent />} />
+              <Route path="/a/addfaculty" element={<AddFaculty />} />
+              <Route path="/a/addsubject" element={<AddSubject />} />
+              <Route path="/a/manage" element={<Management />} />
             </Routes>
             <Routes>
               <Route path="/f" element={<FacultyHome />} />
               <Route path="/f/:subjectName" element={<Subject />} />
               <Route path="/f/dashboard" element={<FacultyDashboard />} />
+              <Route path="/f/addquestion" element={<AddQuestion />} />
             </Routes>
             <Routes>
               <Route path="/s" element={<StudentHome />} />
