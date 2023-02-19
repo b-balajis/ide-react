@@ -26,7 +26,6 @@ function App() {
   return (
     <>
       <AppProvider>
-        {/* <ThemeProvider theme={theme}> */}
           <main>
             <Routes>
               <Route path="/" element={<Navigate to="/signin" />} />
@@ -54,7 +53,6 @@ function App() {
               <Route path="/s/:subjectName/:question" element={<Home />} />
             </Routes>
           </main>
-        {/* </ThemeProvider> */}
       </AppProvider>
     </>
   );
