@@ -1,0 +1,127 @@
+{
+  "3rd Sem": [
+    {
+      "section": "A",
+      "listofsubjects": [
+        "Data Structre",
+        "DataBase Management System",
+        "Data Communication System",
+        "Digital Logic Design",
+        "Disecrete Mathematics Structure",
+        "JAVA"
+      ],
+      "listofFaculty": ["A", "B", "C", "D", "E", "F", "G", "H"],
+      "allotment": [
+        {
+          "subject": "Data Structre",
+          "faculty": "H"
+        },
+        {
+          "subject": "DataBase Management System",
+          "faculty": "B"
+        },
+        {
+          "subject": "Data Communication System",
+          "faculty": "D"
+        },
+        {
+          "subject": "Digital Logic Design",
+          "faculty": "D"
+        },
+        {
+          "subject": "Disecrete Mathematics Structure",
+          "faculty": "E"
+        },
+        {
+          "subject": "JAVA",
+          "faculty": "F"
+        }
+      ]
+    },
+    {
+      "section": "B",
+      "listofsubjects": ["DS", "DBMS", "DCS", "DLD", "DMS", "JAVA"],
+      "allotment": [
+        {
+          "subject": "Data Structre",
+          "faculty": "H"
+        },
+        {
+          "subject": "DataBase Management System",
+          "faculty": "B"
+        },
+        {
+          "subject": "Data Communication System",
+          "faculty": "D"
+        },
+        {
+          "subject": "Digital Logic Design",
+          "faculty": "D"
+        },
+        {
+          "subject": "Disecrete Mathematics Structure",
+          "faculty": "E"
+        },
+        {
+          "subject": "JAVA",
+          "faculty": "F"
+        }
+      ]
+    }
+  ],
+  "4th Sem": [
+    {
+      "name": "4th",
+      "type": "4th",
+      "description": "4th",
+      "image": "4th",
+      "price": "4th",
+      "quantity": "4th",
+      "id": "4th"
+    }
+  ],
+  "5th Sem": [
+    {
+      "name": "5th",
+      "type": "5th",
+      "description": "5th",
+      "image": "5th",
+      "price": "5th",
+      "quantity": "5th",
+      "id": "5th"
+    }
+  ],
+  "6th Sem": [
+    {
+      "name": "6th",
+      "type": "6th",
+      "description": "6th",
+      "image": "6th",
+      "price": "6th",
+      "quantity": "6th",
+      "id": "6th"
+    }
+  ],
+  "7th Sem": [
+    {
+      "name": "7th",
+      "type": "7th",
+      "description": "7th",
+      "image": "7th",
+      "price": "7th",
+      "quantity": "7th",
+      "id": "7th"
+    }
+  ],
+  "8th Sem": [
+    {
+      "name": "8th",
+      "type": "8th",
+      "description": "8th",
+      "image": "8th",
+      "price": "8th",
+      "quantity": "8th",
+      "id": "8th"
+    }
+  ]
+}

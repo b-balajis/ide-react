@@ -14,7 +14,28 @@ import MenuItem from "@mui/material/MenuItem";
 import GMRIT from "../../assets/img/GMRITNavLogo.jpg";
 import { NavLink } from "react-router-dom";
 
-const pages = ["Home", "Dashboard", "Blog"];
+const pages = [
+  {
+    title: "Dashboard",
+    href: "/a/dashboard",
+  },
+  {
+    title: "Add Student",
+    href: "/a/addstudent",
+  },
+  {
+    title: "Add Faculty",
+    href: "/a/addfaculty",
+  },
+  {
+    title: "Add Subject",
+    href: "/a/addsubject",
+  },
+  {
+    title: "Management",
+    href: "/a/manage",
+  }
+];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Navbar = () => {
@@ -94,11 +115,8 @@ const Navbar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <NavLink
-                    to={`/f/${page.toLowerCase()}`}
-                    onClick={clicked}
-                  >
-                  <Typography textAlign="center">{page}</Typography>
+                  <NavLink to={page.href} onClick={clicked}>
+                    <Typography textAlign="center">{page.title}</Typography>
                   </NavLink>
                 </MenuItem>
               ))}
@@ -124,16 +142,14 @@ const Navbar = () => {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
-              <NavLink
-                to={`/f/${page.toLowerCase()}`}
-              >
+              <NavLink to={page.href}>
                 <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
-              >
-                {page}
-              </Button>
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  {page.title}
+                </Button>
               </NavLink>
             ))}
           </Box>
@@ -171,5 +187,5 @@ const Navbar = () => {
       </Container>
     </AppBar>
   );
-}
+};
 export default Navbar;

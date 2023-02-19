@@ -15,9 +15,6 @@
     "@mui/x-date-pickers": "^5.0.12",
     "@react-google-maps/api": "^2.1.1",
     "@sl-codeblaster/react-3d-animated-card": "^1.0.8",
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
     "ace-builds": "^1.14.0",
     "axios": "^1.2.5",
     "chart.js": "2.9.4",
@@ -38,10 +35,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "build:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css --env production",
-    "watch:tailwind": "postcss ./src/assets/styles/index.css -o ./src/assets/styles/tailwind.css -w",
-    "start:react": "react-scripts start",
-    "start": "npm-run-all -p start:react",
+    "start": "react-scripts start",
     "serverInstall": "yarn",
     "build": "npm run && react-scripts build",
     "eject": "react-scripts eject",
@@ -50,8 +44,7 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {

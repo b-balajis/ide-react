@@ -13,6 +13,7 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { useState } from "react";
+import Navbar from "./Navbar";
 
 const theme = createTheme();
 
@@ -29,8 +30,8 @@ const AddQuestion = () => {
   };
 
   const [textareaFields, setTextareaFields] = useState([]);
-  const [textcaseInput, setTextcaseInput] = useState([]);
-  const [textcaseOutput, setTextcaseOutput] = useState([]);
+  // const [textcaseInput, setTextcaseInput] = useState([]);
+  // const [textcaseOutput, setTextcaseOutput] = useState([]);
 
   const handleAddTextarea = () => {
     setTextareaFields([...textareaFields, { value: "" }]);
@@ -51,6 +52,8 @@ const AddQuestion = () => {
 
 
   return (
+    <>
+    <Navbar />
     <ThemeProvider theme={theme}>
       <Container component="main">
         <CssBaseline />
@@ -125,7 +128,7 @@ const AddQuestion = () => {
                       id="input"
                       label={"Textcase Input " + (index+1)}
                       name="input"
-                      value={textcaseInput.value}
+                      // value={textcaseInput.value}
                       onChange={(e) => handleTextareaChange(e, index)}
                     />
                   </Grid>
@@ -136,7 +139,7 @@ const AddQuestion = () => {
                       id="output"
                       label={"Textcase Output " + (index+1)}
                       name="output"
-                      value={textcaseOutput.value}
+                      // value={textcaseOutput.value}
                       onChange={(e) => handleTextareaChange(e, index)}
                     />
                   </Grid>
@@ -163,6 +166,7 @@ const AddQuestion = () => {
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
     </ThemeProvider>
+  </>
   );
 };
 

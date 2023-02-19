@@ -18,6 +18,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Select from "@mui/material/Select";
 import FormControl from "@mui/material/FormControl";
 import Departments from "../../data/depts.json";
+import Navbar from "./Navbar";
 
 // function Copyright(props) {
 //   return (
@@ -56,6 +57,8 @@ export default function SignUp() {
   };
 
   return (
+    <>
+    <Navbar />
     <ThemeProvider theme={theme}>
       <Container component="main">
         <CssBaseline />
@@ -148,5 +151,6 @@ export default function SignUp() {
         {/* <Copyright sx={{ mt: 5 }} /> */}
       </Container>
     </ThemeProvider>
+    </>
   );
 }
